@@ -1,0 +1,13 @@
+header address  {
+    display:flex;
+    flex-direction:column;
+    max-width:480px;
+    max-height:320px;
+    min-width:240px;
+    min-height:160px;
+    border-radius:1.2rem;
+    box-shadow:10px 10px 5px ,var(--bs-dark-rgb);
+    padding:1% 2%
+}
+
+header address a  { text-decoration:none  }

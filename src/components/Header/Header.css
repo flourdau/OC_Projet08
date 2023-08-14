@@ -1,0 +1,86 @@
+header {
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+}
+
+#contentTitle {
+	position: absolute;
+	top:6rem;
+/* margin:6rem 0; */
+
+	right:0;
+	z-index:0;
+	width:100%;
+	/* bottom:0; */
+	/* right:0; */
+	display:flex;
+	flex-flow:row wrap;
+	align-items:flex-start;
+	padding:0 2rem;
+	animation:fadeIn;
+	animation-duration:1s
+}
+
+.modal-header {border-color:var(--violet) !important}
+.modal-content {background-color:rgba(var(--bs-light-rgb), .95) !important}
+
+.myModalBody {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:flex-start;
+	gap:2rem
+}
+
+.myMessage {
+	border-radius: 1rem;
+	padding:1rem;
+	background-color:rgba(var(--bs-dark-rgb), .75) !important;
+	max-width:400px;
+	min-width:320px;
+	height:180px;
+	text-align:left
+}
+
+.myMessage>span {
+	text-shadow:1px 1px 2px var(--myDark);
+	font-weight:var(--font-weight);
+	font-size:var(--font-size);
+	line-height:var(--line-height);
+	text-align:center;
+	font-family:var(--font2);
+	color:var(--vert)
+}
+
+.buttonsBar {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	gap:1rem
+}
+
+.buttonsBar>div:first-child, .buttonsBar>a {font-family:var(--font2)}
+
+
+@media all and (max-width:750px) {
+	#contentTitle {
+		position:absolute;
+		top:6.7rem;
+		width:98%;
+		margin:0 1%;
+		padding: 0;
+		/* right:0.5rem; */
+		left:0rem;
+		/* padding:0 .5rem 0 0; */
+	}
+	
+	.myModalBody {
+		gap:1rem
+	}
+	
+
+}

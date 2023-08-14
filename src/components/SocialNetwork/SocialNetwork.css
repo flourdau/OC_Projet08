@@ -1,0 +1,22 @@
+.social {
+	margin:1rem 0;
+	padding:0;
+	width:100%;
+	display:flex !important;
+	flex-flow:row !important;
+	align-items:center!important;
+	justify-content:center !important;
+	gap:1rem
+}
+
+.social img {width:32px}
+
+.social img, .social ul, .social li, .social a {
+	margin:0;
+	padding:0
+}
+
+.social img:hover {
+	animation:heartBeat;
+	animation-duration:1s
+}

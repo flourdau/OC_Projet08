@@ -1,0 +1,8 @@
+.accordion-button {
+	border-radius: 1rem!important;
+	background-color:var(--white) !important
+}
+
+.accordion-button:not(.collapsed) {
+	background-color:var(--ligjt) !important
+}

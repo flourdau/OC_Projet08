@@ -1,0 +1,41 @@
+.skills {
+	margin:2rem auto;
+	display:flex;
+	flex-flow:column
+}
+
+.skill {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+	row-gap:1rem;
+	column-gap:5rem
+}
+
+.skill h5 {
+	text-align:center;
+	width:100%
+}
+
+.skill img {
+	object-fit:cover;
+	height:45px
+}
+
+.skill img:hover {
+	animation:heartBeat;
+	animation-duration:2s
+}
+
+.skill p {
+	color:var(--pink);
+	font-family:var(--font2)
+}
+
+.skill span {
+	text-align:center;
+	vertical-align:middle
+}
+
+.skill hr {color:var(--violet)}

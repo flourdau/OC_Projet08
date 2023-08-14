@@ -1,0 +1,12 @@
+.myCarousel {
+	z-index:-9999;
+	position:sticky !important;
+	top:0;
+	/* right:0; */
+	overflow:hidden}
+
+.myCarousel img {
+	object-fit:cover;
+	width:100%;
+	height:672px
+}
