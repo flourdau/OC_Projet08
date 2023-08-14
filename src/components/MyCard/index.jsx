@@ -23,10 +23,7 @@ export default function MyCard({ id, Data }) {
 				<Card.Title className="bg-dark text-white"><Button variant="secondary" onClick={handleShow}>{ Data.Resume.projects[id].name }</Button></Card.Title>
 
 				<Modal show={ show } onHide={handleClose} size="xl" >
-					<Modal.Header>
-						<Button variant="secondary" onClick={handleClose}>
-							Close
-						</Button>
+					<Modal.Header closeButton>
 						<Modal.Title onClick={handleClose} as="h3">{ Data.Resume.projects[id].name  }</Modal.Title>
 					</Modal.Header>
 
