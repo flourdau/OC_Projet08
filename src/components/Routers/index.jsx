@@ -13,10 +13,10 @@ return (
 	<Router>
 		<main>
 			<Routes>
-				<Route path="/flourdau/" element={ <Home /> } />
+				<Route path="/portfolio/" element={ <Home /> } />
 				{/* <Route path='/flourdau/product/:id' element={ <Product /> } />
-				<Route path="/flourdau/error" element={ <Error /> } /> */}
-				<Route path="*" element={ <Error /> } />
+				<Route path="/flourdau/error" element={ <Error /> } />
+				<Route path="*" element={ <Error /> } /> */}
 			</Routes>
 		</main>
 	</Router>
