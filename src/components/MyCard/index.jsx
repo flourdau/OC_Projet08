@@ -5,20 +5,16 @@ import Button from 'react-bootstrap/Button'
 
 import Tag from '../../components/Tag'
 import Collapse from '../../components/Collapse'
-// import { Link } from 'react-router-dom'
 
 import './MyCard.css'
 
 export default function MyCard({ id, Data }) {
-	console.log(Data.Resume.projects[id])
+
 	const [show, setShow] = useState(false);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 	return (
-
-	// <Link className='portfolio-item' to={ `/portfolio/product/${ id }`}>
-<div>
 		
 		<Card key={id+"ModalProjet"} >
 			<Card.Img src={ Data.Resume.projects[id].cover } alt="Card image"/>
@@ -76,5 +72,4 @@ export default function MyCard({ id, Data }) {
 			</Card.ImgOverlay>
 
 		</Card>
-</div>
 )}
