@@ -6,7 +6,7 @@ import './MyCard.css'
 export default function MyCard({ id, title, cover }) {
 	return (
 
-	<Link target="_top" className='portfolio-item' to={ `./product/${ id }`}>
+	<Link reloadDocument className='portfolio-item' to={ `./product/${ id }`}>
 
 		<Card>
 
