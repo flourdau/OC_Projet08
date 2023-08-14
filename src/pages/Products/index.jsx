@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import GetData from '../../components/GetData'
+// import GetData from '../../components/GetData'
 import Tag from '../../components/Tag'
 import Collapse from '../../components/Collapse'
 import './Products.css'
 
-let  Data = await GetData()
+// let  Data = await GetData()
 
-export default function Products() {
+export default function Products({Data}) {
 
 	const navigate = useNavigate()
 	const { id } = useParams()
