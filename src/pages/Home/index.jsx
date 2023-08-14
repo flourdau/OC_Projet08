@@ -1,31 +1,24 @@
 import ReactMarkdown from 'react-markdown'
 
-// import GetData from '../../components/GetData'
 import Header from '../../components/Header'
-// import Nav from '../../components/Nav'
+import Nav from '../../components/Nav'
 import SocialNetwork from '../../components/SocialNetwork'
 import MyCard from '../../components/MyCard'
-// import Footer from '../../components/Footer'
 
 import './Home.css'
-
-// let Data = await GetData()
-
-/*	DEBUG 
-*/
-// console.log(Data)
-
 
 export default function Home({Data}) {
 
 	return (
 	<section className="homeContainer"> 
 
-		<Header Resume={ Data.Resume } />
+		<Header Resume={Data.Resume} />
 
-		{/* <Nav Resume={ Data.Resume } /> */}
+		<Nav Resume={ Data.Resume } />
 
 		<section className='blocCol'>
+
+
 			<SocialNetwork Resume={ Data.Resume } />
 			<a href='#Projets'>Mes projets</a>
 
@@ -70,7 +63,5 @@ export default function Home({Data}) {
 
 			</div>
 		</section>
-
-		{/* <Footer Resume={ Data.Resume }/> */}
 
 	</section>)}

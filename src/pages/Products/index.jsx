@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+
+import Nav from '../../components/Nav'
 // import GetData from '../../components/GetData'
 import Tag from '../../components/Tag'
 import Collapse from '../../components/Collapse'
@@ -21,7 +23,8 @@ export default function Products({Data}) {
 
 	if (typeof product === 'object') {
 		return (
-		<section className='productContainer'>
+			<section className='productContainer'>
+			<Nav Resume={ Data.Resume } />
 
 			<div className="blocInfo">
 				<div className="blocTitle">
