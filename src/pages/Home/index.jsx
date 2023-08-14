@@ -9,6 +9,7 @@ import './Home.css'
 
 export default function Home({Data}) {
 
+  
 	return (
 	<section className="homeContainer"> 
 
@@ -49,18 +50,16 @@ export default function Home({Data}) {
 				<div id="Projets">
 					<h3>📌 Projects</h3>
 					<ul className='projectsList'>
-					{ Data.Resume.projects.map(({ id, name, cover }) => (
+					{ Data.Resume.projects.map(({ id, name, cover }, i) => (
 						<li key={`${ id }`}>
 							<MyCard
-								id={ id }
-								title={ name }
-								cover={ cover }
+								id={ i }
+								Data={ Data }
 							/>
 						</li>
 					))}
 					</ul>
 				</div>
-
 			</div>
 		</section>
 

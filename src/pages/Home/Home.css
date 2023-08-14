@@ -78,10 +78,10 @@
 	animation-duration:1s
 }
 
-.projectsList img {
+/* .projectsList img {
 	width:100%;
 	max-height:280px
-}
+} */
 
 @media all and (max-width:750px) {
 	

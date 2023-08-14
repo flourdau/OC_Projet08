@@ -23,7 +23,7 @@ export default function Products({Data}) {
 
 	if (typeof product === 'object') {
 		return (
-			<section className='productContainer'>
+			<section  className='productContainer'>
 			<Nav Resume={ Data.Resume } />
 
 			<div className="blocInfo">
