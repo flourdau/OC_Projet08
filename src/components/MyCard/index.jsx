@@ -1,11 +1,12 @@
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
 
 import './MyCard.css'
 
 export default function MyCard({ id, title, cover }) {
 	return (
 
-	<a className='portfolio-item' href={ `/portfolio/product/${ id }`}>
+	<Link className='portfolio-item' to={ `./product/${ id }`}>
 
 		<Card>
 			<Card.Img src={ cover } alt="Card image"/>
@@ -15,6 +16,6 @@ export default function MyCard({ id, title, cover }) {
 			</Card.ImgOverlay>
 		</Card>
 
-	</a>
+	</Link>
 
 )}
