@@ -22,7 +22,7 @@ export default function MyCard({ id, Data }) {
 			<Card.ImgOverlay>
 				<Card.Title className="bg-dark text-white"><Button variant="secondary" onClick={handleShow}>{ Data.Resume.projects[id].name }</Button></Card.Title>
 
-				<Modal show={ show }  size="xl" >
+				<Modal show={ show } onHide={handleClose} size="xl" >
 					<Modal.Header>
 						<Button variant="secondary" onClick={handleClose}>
 							Close
