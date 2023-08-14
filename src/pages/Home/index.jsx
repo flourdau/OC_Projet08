@@ -2,10 +2,10 @@
 
 import GetData from '../../components/GetData'
 import Header from '../../components/Header'
-// import Nav from '../../components/Nav'
+import Nav from '../../components/Nav'
 // import SocialNetwork from '../../components/SocialNetwork'
 // import MyCard from '../../components/MyCard'
-// import Footer from '../../components/Footer'
+import Footer from '../../components/Footer'
 
 import './Home.css'
 
@@ -22,5 +22,9 @@ export default function App() {
 	<section className="homeContainer"> 
 
 		<Header Resume={ Data.Resume } />
+
+		<Nav Resume={ Data.Resume } />
+
+		<Footer Resume={ Data.Resume }/>
 
 	</section>)}
