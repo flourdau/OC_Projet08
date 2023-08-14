@@ -1,0 +1,151 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Design System */
+:root {
+	/* Colors */
+	--myLight:rgb(248, 249, 250);
+	--myDark:rgb(33, 37, 41);
+	--mysuccess: #198754;
+	--myDanger:#dc3545;
+
+	--lightPink:#FFE9DE;
+	--pink:#FF4FA6;
+	--violet:#8997F5;
+	--vert:#00DB66;
+	--yellow:#F5EC68;
+
+	/* Text configuration */
+	--font1:'Open Sans';
+	--font2:'Space Mono';
+
+	--font-weight:400;
+	--highlight-font-weight:600;
+
+	--font-size:1rem;
+	--highlight-font-size:2rem;
+	--title-font-size:3rem;
+
+	--line-height:1rem;
+	--highlight-line-height:1.5rem;
+	--title-line-height:3rem;
+
+	margin:0;
+	display:flex;
+	flex-flow:column;
+	align-items:stretch;
+	justify-content:center
+}
+.myDisplay {
+	display: none;
+}
+strong {
+	color:var(--vert);
+}
+
+ * {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-family:'Open Sans', sans-serif
+}
+
+body {
+	font-family: var(--font1);
+	font-style: normal;
+	font-weight: var(--font-weight);
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	color: var(--black)
+}
+
+.myViolet {color:var(--violet) !important}
+/*
+	MULTICOLOR */
+.rainbow_text_animated {
+	background:linear-gradient(to right, 
+		var(--pink),
+		var(--violet),
+		var(--vert),
+		var(--yellow),
+		var(--pink),
+		var(--violet),
+		var(--vert),
+		var(--yellow)
+	);
+	-webkit-background-clip:text !important;
+	background-clip:text !important;
+	color:transparent !important;
+	animation:rainbow_animation 8s ease-in-out infinite !important;
+	background-size:800% 100%
+}
+@keyframes rainbow_animation {
+	
+	0%, 100% {background-position: 0 0}
+	50% {background-position: 100% 0}
+	
+}
+
+a {
+	color:var(--pink) !important
+}
+
+a:visited {
+	color:var(--violet) !important
+}
+
+h1 {
+	font-family:var(--font1);
+	font-style:normal;
+	color:var(--myDark) !important;
+	font-weight:var(--highlight-font-weight) !important;
+	font-size:var(--title-font-size) !important;
+	line-height:var(--title-line-height) !important
+}
+h1:hover {color:var(--pink) !important}
+
+h2 {
+	color:var(--myDark) !important;
+    font-style:normal;
+	font-family:var(--font2)!important;
+    font-weight:var(--highlight-font-weight) !important;
+    font-size:var(--title-font-size) !important;
+    line-height:var(--title-line-height) !important
+}
+
+h3 {
+    font-weight:var(--highlight-font-weight) !important;
+    font-size:var(--highlight-font-size) !important;
+    line-height:var(--highlight-line-height) !important
+
+}
+
+.h5, h5, .h4, h4, .h3, h3, h3 button {
+	font-family:var(--font1) !important;
+	color:var(--violet) !important
+}
+
+@media all and (max-width:750px) {
+
+	h1 {
+		font-weight: var(--highlight-font-weight) !important;
+		font-size: var(--highlight-font-size) !important;
+		line-height: var(--highlight-line-height) !important
+	}
+
+	h2 {
+		font-weight: var(--font-weight) !important;
+		font-size: var(--font-size) !important;
+		line-height: var(--line-height) !important;
+	}
+
+}
+
+.tr1 {display:flex}
+.tr2 {display:none}
+@media (min-width:750px) {
+
+		.tr1 {display:none}
+		.tr2 {display:flex}
+
+}

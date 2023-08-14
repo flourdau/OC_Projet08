@@ -1,0 +1,104 @@
+#collapse_2,
+#collapse_3,
+#collapse_4,
+#collapse_5,
+#collapse_6,
+#collapse_7,
+#collapse_8,
+.OpenClassrooms_1 {display:none}
+
+.homeContainer {
+	display:flex;
+	flex-flow:column;
+	align-items:center
+}
+
+.blocCol {
+	margin:2rem 0 0 0;
+	width:100%;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	justify-content:center;
+	text-align:center
+}
+
+.blocCol>a {
+	margin:0;
+	padding:0;
+	width:100%
+}
+
+.blocCol h3 {
+	width:100%;
+	margin:6rem 0;
+	text-align:center;
+	font-family:var(--font1);
+    font-style:normal;
+    font-weight:var(--font-weight);
+    font-size:var(--highlight-font-size);
+    line-height:var(--line-height)
+}
+
+#blocMain p {
+	min-width:320px;
+	animation:rainbow_text_animated;
+	animation-duration:2s;
+	padding:0 10rem;
+	font-family:var(--font2);
+    font-style:italic;
+    font-weight:var(--hightline-font-weight);
+    font-size:var(--highlight-font-size);
+    line-height:var(--highlight-line-height) + 0.5rem
+}
+
+.projectsList, .FormationList {
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:space-evenly;
+	gap:2rem
+}
+
+.FormationList, .FormationList li, .FormationList a {
+	margin:0;
+	padding:0
+}
+
+.FormationList img {
+	margin:0;
+	padding:0;
+	width:100%;
+	max-width:372px;
+	height:272px
+}
+
+#Formation img:hover {
+	animation:bounce;
+	animation-duration:1s
+}
+
+.projectsList img {
+	width:100%;
+	max-height:280px
+}
+
+@media all and (max-width:750px) {
+	
+	.social {
+		position:relative;
+		left:0
+	}
+	
+	#blocMain{padding:0 1rem}
+	#blocMain p {
+		padding:0 1rem;
+		font-weight:var(--font-weight);
+		font-size:.7rem;
+		line-height:var(--line-height) + 0.5rem
+	}
+	/* #Formation ul {height:1024px} */
+	#Formation img {width:92px;height:128px}
+	.projectsList {padding:2rem 0 0 0}
+
+}
