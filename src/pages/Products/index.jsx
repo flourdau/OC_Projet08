@@ -25,7 +25,7 @@ export default function Products() {
 
 			<div className="blocInfo">
 				<div className="blocTitle">
-					<h1>{ product.name }</h1>
+					<h1 id='upPage'>{ product.name }</h1>
 					<h2>{ product.type }</h2>
 				</div>
 				<img  className="coverProduct" src={ product.cover } alt="cover"/>
