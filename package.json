@@ -5,7 +5,7 @@
   "description": "My personal Portfolio",
   "repository": "git@github.com:flourdau/portfolio.git",
   "author": "flourdau <lourdaux.florian.pro@gmail.com>",
-  "homepage": "https://flourdau.github.io/portfolio",
+  "homepage": "https://flourdau.github.io/portfolio/",
   "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

@@ -33,7 +33,7 @@ export default function Home() {
 
 				<div id="Presentation">
 					{ Data.arrayReadME.map((githubReadMeSection, i) => (
-					<div  key={ new Date().getTime() + i + "presentation"} id={ "collapse_" + i } >
+					<div key={ new Date().getTime() + i + "presentation"} id={ "collapse_" + i } >
 						<h3>{ githubReadMeSection[0].trim().substr(3) }</h3>
 						<div><ReactMarkdown children={ githubReadMeSection[1] } /></div>
 					</div>
