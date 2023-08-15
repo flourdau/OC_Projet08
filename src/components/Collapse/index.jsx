@@ -14,9 +14,7 @@ export default function Collapse({ index, title, content }) {
 				:( <Accordion.Body>{ content.map((item, i) => (<p key={ i }>{ item }</p>))}</Accordion.Body> )
 			}		
 		</Accordion.Item>
-	</Accordion>
-	
-)}
+	</Accordion>)}
 
 Collapse.propTypes = {
 	title: propTypes.string,

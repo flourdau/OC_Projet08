@@ -1,6 +1,4 @@
 .navbar {
-	/* border-bottom:.1rem solid;
-	border-color:var(--vert); */
 	display:flex;
 	flex-flow:column;
 	justify-content:space-between;
@@ -43,8 +41,8 @@
 	nav {bottom:unset !important}
 
 	.navbar {
-		position: fixed!important;
-		top: 0;
+		position:fixed!important;
+		top:0;
 		padding:.5rem!important;
 		flex-flow:row wrap !important;
 		justify-content:space-around!important;
@@ -62,8 +60,6 @@
 		left:-15px
 	}
 
-	.infoSocial {
-		font-size:.8rem !important;
-	}
+	.infoSocial {font-size:.8rem !important}
 
 }

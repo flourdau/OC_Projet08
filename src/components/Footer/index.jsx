@@ -23,6 +23,4 @@ export default function Footer({ Resume }) {
 
 			<SocialNetwork Resume={ Resume } />
 
-		</footer>
-
-)}
+		</footer>)}

@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal'
 import ProfilCard from '../ProfilCard'
 import Carousel from '../Carousel'
 import Skills from '../Skills'
-import imgProfile from '../../assets/flourdau.png'
+import imgProfile from '../../assets/flourdau.webp'
 
 import './Header.css'
 
@@ -49,6 +49,4 @@ export default function Header({ Resume }) {
 			</Modal.Footer>
 		</Modal.Dialog>
 
-	</header>
-
-)}
+	</header>)}

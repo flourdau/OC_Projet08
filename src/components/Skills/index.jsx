@@ -12,14 +12,14 @@ export default function Skills({ Resume }) {
 	const handleClose = () => setShow(false)
 	const handleShow = () => setShow(true)
 
-	const background = {
-		backgroundColor:"#00DB66"
-	}
+	const background = { backgroundColor:"#00DB66" }
 
 	return (
 
 	<div>
+
 		<Button size="lg" variant="light" style={ background } onClick={ handleShow }>Compétences</Button>
+
 		<Modal show={show} onHide={handleClose} backdrop="static" fullscreen={true} keyboard={true} >
 
 			<Modal.Header closeButton>
@@ -43,6 +43,7 @@ export default function Skills({ Resume }) {
 					</div>
 				))}
 			</Modal.Body>
+
 		</Modal>
-	</div>
-)}
+
+	</div>)}

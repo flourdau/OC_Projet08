@@ -10,16 +10,20 @@ export default function MyNav({ Resume }) {
 	return (
 
 	<Navbar expand="xxl" sticky="top" bg="light" data-bs-theme="light">
+
 		<Navbar.Brand href="/portfolio/">
 			<h1>{ Resume.basics.name }</h1>
 		</Navbar.Brand>
 
 		<Navbar.Brand >
 			<div id="contentSubTitle">
+
 				<Nav.Link href="/portfolio/curriculum">
 					<h2 id="subTitle" className="empty"> { Resume.basics.label }</h2>
 				</Nav.Link>
+
 				<UniToggle />
+
 			</div>
 		</Navbar.Brand>
 
@@ -32,6 +36,4 @@ export default function MyNav({ Resume }) {
 			</Nav>
 		</Navbar.Collapse>
 
-	</Navbar>
-
-)}
+	</Navbar>)}

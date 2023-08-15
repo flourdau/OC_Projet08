@@ -36,12 +36,6 @@
 	align-items:stretch;
 	justify-content:center
 }
-.myDisplay {
-	display: none;
-}
-strong {
-	color:var(--vert);
-}
 
  * {
 	margin:0;
@@ -60,39 +54,11 @@ body {
 }
 
 .myViolet {color:var(--violet) !important}
-/*
-	MULTICOLOR */
-.rainbow_text_animated {
-	background:linear-gradient(to right, 
-		var(--pink),
-		var(--violet),
-		var(--vert),
-		var(--yellow),
-		var(--pink),
-		var(--violet),
-		var(--vert),
-		var(--yellow)
-	);
-	-webkit-background-clip:text !important;
-	background-clip:text !important;
-	color:transparent !important;
-	animation:rainbow_animation 8s ease-in-out infinite !important;
-	background-size:800% 100%
-}
-@keyframes rainbow_animation {
-	
-	0%, 100% {background-position: 0 0}
-	50% {background-position: 100% 0}
-	
-}
+.myDisplay {display:none}
+strong {color:var(--myDark)}
 
-a {
-	color:var(--pink) !important
-}
-
-a:visited {
-	color:var(--violet) !important
-}
+a {color:var(--pink) !important}
+a:visited {color:var(--violet) !important}
 
 h1 {
 	font-family:var(--font1);
@@ -125,6 +91,34 @@ h3 {
 	color:var(--violet) !important
 }
 
+
+/*
+	MULTICOLOR */
+.rainbow_text_animated {
+	background:linear-gradient(to right, 
+		var(--pink),
+		var(--violet),
+		var(--vert),
+		var(--yellow),
+		var(--pink),
+		var(--violet),
+		var(--vert),
+		var(--yellow)
+	);
+	-webkit-background-clip:text !important;
+	background-clip:text !important;
+	color:transparent !important;
+	animation:rainbow_animation 8s ease-in-out infinite !important;
+	background-size:800% 100%
+}
+@keyframes rainbow_animation {
+	
+	0%, 100% {background-position: 0 0}
+	50% {background-position: 100% 0}
+	
+}
+
+
 @media all and (max-width:750px) {
 
 	h1 {
@@ -138,14 +132,5 @@ h3 {
 		font-size: var(--font-size) !important;
 		line-height: var(--line-height) !important;
 	}
-
-}
-
-.tr1 {display:flex}
-.tr2 {display:none}
-@media (min-width:750px) {
-
-		.tr1 {display:none}
-		.tr2 {display:flex}
 
 }

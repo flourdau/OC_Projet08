@@ -3,6 +3,4 @@
 	background-color:var(--white) !important
 }
 
-.accordion-button:not(.collapsed) {
-	background-color:var(--ligjt) !important
-}
+.accordion-button:not(.collapsed) { background-color:var(--ligjt) !important }

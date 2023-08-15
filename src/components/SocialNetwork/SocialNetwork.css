@@ -9,7 +9,10 @@
 	gap:1rem
 }
 
-.social img {width:32px}
+.social img {
+	width:32px;
+	height:32px
+}
 
 .social img, .social ul, .social li, .social a {
 	margin:0;

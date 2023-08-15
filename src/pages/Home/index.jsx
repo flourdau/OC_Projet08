@@ -7,9 +7,8 @@ import MyCard from '../../components/MyCard'
 
 import './Home.css'
 
-export default function Home({Data}) {
+export default function Home({ Data }) {
 
-  
 	return (
 	<section className="homeContainer"> 
 
@@ -19,8 +18,8 @@ export default function Home({Data}) {
 
 		<section className='blocCol'>
 
-
 			<SocialNetwork Resume={ Data.Resume } />
+
 			<a href='#Projets'>Mes projets</a>
 
 			<div id="blocMain">
@@ -60,6 +59,7 @@ export default function Home({Data}) {
 					))}
 					</ul>
 				</div>
+
 			</div>
 		</section>
 

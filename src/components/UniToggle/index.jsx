@@ -23,6 +23,7 @@ export default function UniToggle() {
 	}
 
 	return (
+
 	<div>
 		<span>
 			<label className="switch">
@@ -31,5 +32,4 @@ export default function UniToggle() {
 				<span className='myDisplay'>LABEL SLIDER</span>
 			</label>
 		</span>
-	</div>
-)}
+	</div>)}

@@ -1,5 +1,4 @@
 const urlGitResume = 'https://raw.githubusercontent.com/flourdau/flourdau/main/Resume.json'
-// const urlGitResume = 'https://api.github.com/repos/flourdau/flourdau/contents/Resume.json'
 const urlGitReadMe = 'https://raw.githubusercontent.com/flourdau/flourdau/main/README.md'
 // const urlGitProfile = 'https://api.github.com/users/flourdau'
 

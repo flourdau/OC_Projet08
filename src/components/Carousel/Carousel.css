@@ -2,8 +2,8 @@
 	z-index:-9999;
 	position:sticky !important;
 	top:0;
-	/* right:0; */
-	overflow:hidden}
+	overflow:hidden
+}
 
 .myCarousel img {
 	object-fit:cover;

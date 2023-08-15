@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 import Tag from '../../components/Tag'
 import Collapse from '../../components/Collapse'
@@ -33,16 +34,17 @@ export default function MyCard({ id, Data }) {
 				<Modal.Body className="myModalBody">
 
 				<div className="blocInfo">
-					<div className="blocTitle">
-						<h3 id='upPage'>{ Data.Resume.projects[id].name }</h3>
-						<h4>{ Data.Resume.projects[id].type }</h4>
-					</div>
 
 					<img  className="coverProduct" src={ Data.Resume.projects[id].cover } alt="cover"/>
 
+					<div className="blocTitle">
+						<h4>{ Data.Resume.projects[id].type }</h4>
+					</div>
+
 					<div className="blocCollapse">
+						
 						<div className='Description'><Collapse key={ 'blocCollapse1' } title={ `Description` } content={ Data.Resume.projects[id].description }/></div>
-						<div className='Competences'><Collapse key={ 'blocCollapse2' } title={ `Compétences évaluées` } content={ Data.Resume.projects[id].highlights }/></div>
+
 						<ul className='blocTag'>
 							{ Data.Resume.projects[id].keywords.map(tag => 
 							<li key={ new Date().getTime() + tag } >
@@ -51,11 +53,19 @@ export default function MyCard({ id, Data }) {
 							</li>
 							) }
 						</ul>
+
+						<div className='Competences'><Collapse key={ 'blocCollapse2' } title={ `Compétences évaluées` } content={ Data.Resume.projects[id].highlights }/></div>
+
 					</div>
 
 					<div className='blocLinks'>
-						<a href={ Data.Resume.projects[id].url}>Production</a>
-						<a href={ Data.Resume.projects[id].depot}><img alt="" src="/flourdau/img/Body/SVG/GitHubAPI.svg"/>GitHub</a>
+						<a target="_blank" rel="noreferrer" href={ Data.Resume.projects[id].url}>
+							<span>Production</span>
+						</a>
+						<a target="_blank" rel="noreferrer" href={ Data.Resume.projects[id].depot}>
+							<img alt="" src="/portfolio/img/Body/SVG/GitHubAPI.svg"/>
+							<span>GitHub</span>
+						</a>
 					</div>
 				</div>
 
@@ -68,8 +78,12 @@ export default function MyCard({ id, Data }) {
 				))}
 				</div>
 
-			</Modal.Body>
+				</Modal.Body>
+
+				<Modal.Footer>
+					<Button variant="secondary" onClick={handleClose}>Close</Button>
+				</Modal.Footer>
 
 			</Modal>
-		</Card>
-)}
+
+		</Card>)}
