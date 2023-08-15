@@ -82,8 +82,8 @@ h2 {
 h3 {
     font-weight:var(--highlight-font-weight) !important;
     font-size:var(--highlight-font-size) !important;
-    line-height:var(--highlight-line-height) !important
-
+    line-height:var(--highlight-line-height) !important;
+	background-color:var(--lightPink)
 }
 
 .h5, h5, .h4, h4, .h3, h3, h3 button {
