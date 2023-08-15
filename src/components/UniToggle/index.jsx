@@ -27,9 +27,9 @@ export default function UniToggle() {
 	<div>
 		<span>
 			<label for="myCheckBox" className="switch">
-				<input id="myCheckBox" type="checkbox" checked={checked} onChange={ handleToggle } />
+				<input aria-label="Switch" id="myCheckBox" type="checkbox" checked={checked} onChange={ handleToggle } />
+				{/* <span className='myDisplay'>LABEL SLIDER</span> */}
 				<span className="slider round"></span>
-				<span className='myDisplay'>LABEL SLIDER</span>
 			</label>
 		</span>
 	</div>)}

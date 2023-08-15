@@ -18,7 +18,7 @@ export default function MyNav({ Resume }) {
 		<Navbar.Brand >
 			<div id="contentSubTitle">
 
-				<Nav.Link href="/portfolio/curriculum">
+				<Nav.Link href="https://positive-link.net/curriculum">
 					<h2 id="subTitle" className="empty"> { Resume.basics.label }</h2>
 				</Nav.Link>
 

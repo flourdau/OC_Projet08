@@ -41,7 +41,7 @@ export default function Header({ Resume }) {
 
 				<div className='buttonsBar'>
 					<Skills className="skills" Resume={ Resume } />
-					<a target="_blank" rel="noreferrer" href="https://positive-link.net/dl/flourdau.pdf">
+					<a target="_blank" rel="noreferrer" href="https://positive-link.net/curriculum">
 						<Button size="lg" style={background} variant="dark">Mon CV</Button>
 					</a>
 				</div>
