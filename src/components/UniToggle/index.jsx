@@ -26,7 +26,7 @@ export default function UniToggle() {
 
 	<div>
 		<span>
-			<label className="switch">
+			<label for="myCheckBox" className="switch">
 				<input id="myCheckBox" type="checkbox" checked={checked} onChange={ handleToggle } />
 				<span className="slider round"></span>
 				<span className='myDisplay'>LABEL SLIDER</span>
