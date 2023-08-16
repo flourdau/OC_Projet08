@@ -131,11 +131,9 @@
 	#blocMain p {
 		padding:0 1rem;
 		font-weight:var(--font-weight);
-		font-size:.7rem;
+		font-size:.85rem;
 		line-height:var(--line-height) + 0.5rem
 	}
-
-
 
 	.projectsList {padding:2rem 0 0 0}
 
